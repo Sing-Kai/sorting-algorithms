@@ -7,9 +7,25 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             int[] arr = new int[15] {2, 5, -4, 11, 0, 15, 22, 67, 51, 6, 65, 23, 89, 1, 40};
-            Insertion.Sort(arr);
+
+            Print(arr, "Before:");
+
+            var sorted = Insertion.Sort(arr);
+
+            Print(sorted, "After:");
+
+        }
+
+        private static void Print(int[] arr, string msg){
+
+            Console.WriteLine(msg);
+
+            foreach (int i in arr)
+            {
+                Console.Write(i.ToString() + "  ");
+            }
+            Console.WriteLine(string.Empty);
         }
     }
 }
