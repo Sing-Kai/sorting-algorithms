@@ -11,7 +11,8 @@ namespace Sorting
 
             Print(arr, "Before:");
 
-            var sorted = Insertion.Sort(arr);
+            // var sorted = Insertion.Sort(arr);
+            var sorted = SelectionSort.Sort(arr);
 
             Print(sorted, "After:");
 
